@@ -1,0 +1,71 @@
+{
+  "manifestVersion": 1,
+  "id": "cboroson-PD-Trigger",
+  "name": "Trigger PagerDuty Incidents",
+  "version": "1.0.5",
+  "publisher": "cboroson",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Opens a PagerDuty incident using a provided integration key.",
+  "scopes": [
+    "vso.build",
+    "vso.serviceendpoint"
+  ],    
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "PagerDuty",
+    "Release",
+    "Incident"
+  ],
+  "content": {
+    "details": {
+      "path": "readme.md"
+    },
+    "license": {
+      "path": "PD-Trigger-extension/license.txt"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/cboroson/PD-Trigger"
+    },
+    "support": {
+      "uri": "https://github.com/cboroson/PD-Trigger"
+    }
+  },
+
+
+
+  "branding": {
+    "color": "rgb(36, 43, 50)",
+    "theme": "dark"
+  },
+  "icons": {
+    "default": "PD-Trigger-extension/images/pdicon.png"
+  },
+  "files": [
+  {
+    "path": "PD-Trigger-release", "addressable": true
+  }
+],
+
+  "contributions": [
+    {
+      "id": "cboroson-PD-Trigger",
+      "type": "ms.vss-distributed-task.task",
+      "description": "Opens a PagerDuty incident using a provided integration key.",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "PD-Trigger-release"
+      }
+    }
+  ]
+}
