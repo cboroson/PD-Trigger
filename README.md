@@ -11,7 +11,9 @@ I wrote this extension because the VSTS integration with PagerDuty only supports
 This extension requires an existing PagerDuty subscription and a service integration.
 
 ## Configuration
-The Integration Key and any details should be added in the appropriate fields.
+The Integration Key and any details should be added in the appropriate fields.  To alert when the release fails, set the `Control Option` to run the task `only when a previous task has failed`.
+
+![](https://raw.githubusercontent.com/cboroson/PD-Trigger/master/readme-image1.jpg)
 
 ## Contributing
 
